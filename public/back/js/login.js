@@ -61,7 +61,7 @@ $('#form').on("success.form.bv", function (e) {
             if (info.success) {
                 location.href = "index.html";
             }
-            if (infp.error === 1000) {
+            if (info.error === 1000) {
                 $('#form').data("bootstrapValidator").updateStatus("username", "INVALID", "callback")
             }
             if (info.error === 1001) {
